@@ -16,3 +16,21 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.ScrollContainer {
+  position: relative;
+  text-align: center;
+}
+
+.ScrollTextContainer {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+}
+
+.WishlistImage {
+  width: 400px;
+}
+
+.Wishlist {
+}
