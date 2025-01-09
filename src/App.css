@@ -18,7 +18,22 @@
 }
 
 .WishlistImage {
-  width: 300px;
+  width: 200px;
+}
+
+.CircleBackground {
+  box-shadow: inset 0px 10px 20px -5px rgba(0, 0, 0, 0.5);
+  min-width: 1080px;
+  height: 1080px;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("assets/images/circle_bg.png");
+}
+
+header {
+  height: 100px;
+  background-color: #950606;
 }
 
 /*# sourceMappingURL=App.css.map */

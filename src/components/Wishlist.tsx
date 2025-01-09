@@ -9,9 +9,9 @@ function Wishlist( { name, items, position }: Wishlist) {
 
   return (
     <div className="WishlistContainer" style={position}>
-      <header>
+      <h4>
         {name}
-      </header>
+      </h4>
       <div className="ScrollContainer">
         <div>
           <img className="WishlistImage" src="img/scroll.png" alt="Wishlist scroll" />
