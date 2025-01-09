@@ -1,54 +1,15 @@
 import React from 'react';
 import './App.css';
-import scroll from './img/scroll.png';
 
-interface Name {
-  name: string;
-}
+import Wishlist from './components/Wishlist';
 
 function App() {
+  let items = ["load", "of", "rubbish"];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <WishListFrame name="user"/>
-      </header>
-    </div>
-  );
-}
-
-function WishList() {
-  return (
-    <div className="Wishlist">
-      <ul>
-        <li>
-          <p>load of rubbish</p>
-        </li>
-      </ul>
-    </div>
-  );
-}
-
-function WishListScroll() {
-  return (
-    <div className="ScrollContainer">
-      <div>
-        <img className="WishlistImage" src={scroll} alt="Wishlist scroll" />
-      </div>
-      <div className="ScrollTextContainer">
-        <WishList />
-      </div>
-    </div>
-  );
-}
-
-function WishListFrame(props: Name) {
-  return (
-    <div>
-      <div>
-        { props.name }
-      </div>
-      <div>
-        <WishListScroll />
+      <div className="App-header">
+        <Wishlist name="user" items={items}/>
       </div>
     </div>
   );
