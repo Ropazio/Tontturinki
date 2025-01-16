@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Dafoe;
+  src: url(assets/fonts/MrDafoe-Regular.ttf);
+}
 .App {
   text-align: center;
 }
@@ -28,12 +32,34 @@
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("assets/images/circle_bg.png");
+  background-image: url(assets/images/circle_bg.png);
 }
 
 header {
-  height: 100px;
-  background-color: #950606;
+  display: flex;
+  font-size: x-large;
+  align-items: center;
+  padding-left: 40px;
+  text-align: left;
+  font-family: Dafoe;
+  height: 80px;
+  top: 0px;
+  left: 0px;
+  position: sticky;
+  z-index: 1000;
+  background: rgb(174, 16, 29);
+  background: linear-gradient(0deg, rgb(174, 16, 29) 0%, rgb(123, 6, 6) 100%);
+}
+header h1 {
+  margin: 0px;
+}
+header > div {
+  display: flex;
+  width: 1200px;
+  justify-content: flex-end;
+}
+header > div > div {
+  margin-right: 50px;
 }
 
 /*# sourceMappingURL=App.css.map */
