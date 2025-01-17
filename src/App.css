@@ -29,14 +29,14 @@
 }
 
 .WishlistImage {
-  width: 20.8333333333vh;
+  width: 20vh;
 }
 
 .CircleBackground {
   width: 100%;
   min-height: 100vh;
   background: rgb(246, 244, 242);
-  background: radial-gradient(circle, rgb(246, 244, 242) 0%, rgb(230, 226, 215) 50%);
+  background: radial-gradient(circle, rgb(246, 244, 242) 0%, rgb(215, 210, 196) 50%);
 }
 
 header {
@@ -55,11 +55,16 @@ header h1 {
   font-family: Dafoe;
   font-size: xxx-large;
   text-align: center;
+  margin-bottom: 100px;
+}
+header h2 {
+  text-align: left;
+  margin-left: 30px;
 }
 header > ul {
   text-align: left;
-  float: left;
-  margin-top: 80px;
+  padding: 0px;
+  margin-left: 30px;
 }
 header > ul > li {
   display: flex;
@@ -112,6 +117,11 @@ footer h4 {
 
 #catButton:hover {
   transform: rotate(360deg);
+}
+
+#ChristmasCircle {
+  position: absolute;
+  width: 200px;
 }
 
 /*# sourceMappingURL=App.css.map */
