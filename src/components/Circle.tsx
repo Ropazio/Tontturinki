@@ -16,6 +16,7 @@ function Circle() {
 
       {users.map((user, index) => {
         let angle;
+        // If the number of lists is odd, spin the ring so that the circle looks good
         if (users.length % 2 == 0) {
           angle = (2 * Math.PI * index) / users.length;
         } else {

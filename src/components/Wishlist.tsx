@@ -18,7 +18,7 @@ function Wishlist( { name, items, position }: Wishlist) {
         </div>
         <div className="ListTextContainer">
           {items.length === 0 && <p></p>}
-          <ul className="Wishlist">
+          <ul>
             {items.map((item, index) => (
             <li key={index}>
               {item}

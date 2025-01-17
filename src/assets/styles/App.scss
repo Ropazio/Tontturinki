@@ -1,6 +1,6 @@
 @font-face {
   font-family: Dafoe;
-  src: url(assets/fonts/MrDafoe-Regular.ttf);
+  src: url(../fonts/MrDafoe-Regular.ttf);
 }
 
 :root {
@@ -29,8 +29,15 @@
   position: absolute;
   width: 90%;
   top: 20px;
-  left: 5px;
+  left: 8px;
   text-align: left;
+
+  ul {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 22px;
+    list-style-type: "- ";
+  }
 }
 
 .WishlistImage {
@@ -119,7 +126,7 @@ footer {
 }
 
 #catButton {
-  background: url(assets/images/github.png);
+  background: url(../images/github.png);
   background-size: 100%;
   border: 1px solid black;
   border-radius: 50%;
@@ -136,7 +143,5 @@ footer {
   position: absolute;
   width: 200px;
 }
-
-.Wishlist {}
 
 @media (max-width: 992px) {}

@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+import './assets/styles/App.css';
+import useSize from './helpers/viewport'
 
 // Import components
 import Header from './components/shared/Header';
@@ -8,6 +9,7 @@ import Circle from './components/Circle';
 
 function App() {
 
+  const viewport = useSize();
   var subPages = ["Tontturinki", "Nyyttäririnki"];
 
   return (
