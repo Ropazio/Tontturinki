@@ -6,9 +6,10 @@ interface NaviLink {
 function NaviLink( { link }: NaviLink) {
 
   return (
-    <div>
+    <li>
+      <p />
       {link}
-    </div>
+    </li>
     )
 }
 

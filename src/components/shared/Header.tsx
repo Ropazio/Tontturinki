@@ -1,15 +1,24 @@
 
 import NaviLink from './NaviLink';
 
-function Header() {
+interface Header {
+  subPages: string[];
+}
+
+function Header( {subPages}: Header) {
 
   return (
     <header>
       <h1>Ringis</h1>
-      <div>
-        <NaviLink link="link1" />
-        <NaviLink link="link2" />
-      </div>
+      <ul>
+        {subPages.map((page, index) => {
+          return (
+            <NaviLink 
+              key={index}
+              link={page} 
+            />
+          )})}
+      </ul>
     </header>
     )
 }

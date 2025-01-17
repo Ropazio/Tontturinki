@@ -8,9 +8,11 @@ import Circle from './components/Circle';
 
 function App() {
 
+  var subPages = ["Tontturinki", "Nyyttäririnki"];
+
   return (
     <div className="App">
-      <Header />
+      <Header subPages={subPages}/>
       <Circle />
       <Footer />
     </div>

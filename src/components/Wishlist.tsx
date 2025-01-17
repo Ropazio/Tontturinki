@@ -12,11 +12,11 @@ function Wishlist( { name, items, position }: Wishlist) {
       <h4>
         {name}
       </h4>
-      <div className="ScrollContainer">
+      <div className="ListContainer">
         <div>
           <img className="WishlistImage" src="img/scroll.png" alt="Wishlist scroll" />
         </div>
-        <div className="ScrollTextContainer">
+        <div className="ListTextContainer">
           {items.length === 0 && <p></p>}
           <ul className="Wishlist">
             {items.map((item, index) => (
